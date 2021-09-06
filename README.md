@@ -47,8 +47,11 @@ Mozilla Firefox
 
 # Versions
 Angular CLI: 12.2.4
+
 Node: 16.6.1 (Unsupported)
+
 Package Manager: npm 6.14.15
+
 OS: win32 x64
 
 ## Development server
