@@ -36,12 +36,41 @@ https://www.udemy.com/course/der-angular-2-kurs/
 
 https://stackoverflow.com/questions/40817280/how-to-change-angular-cli-favicon
 
+https://www.last.fm/api
+
 # Used Software
 Webstorm
 
 SmartGit
 
 Mozilla Firefox
+
+# Versions
+Angular CLI: 12.2.4
+
+Node: 16.6.1 (Unsupported)
+
+Package Manager: npm 6.14.15
+
+OS: win32 x64
+
+# Installation
+
+    Clone this repo
+    cd into the folder of the cloned repo
+    Install dependencies
+    Update the LastFM API Key
+
+        Go to api.service.ts and save your API keys into the file
+
+        export class LastfmService {
+
+            API_KEY_LASTFM = <your-lastFM-API-key-goes-here>
+            API_KEY_THEMOVIEDB = <your-TheMovieDB-API-key-goes-here>
+
+            constructor(private http: HttpClient) { }
+
+    Run ng serve, and navigate to http://localhost:4200/
 
 ## Development server
 
