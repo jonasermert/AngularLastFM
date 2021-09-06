@@ -54,6 +54,24 @@ Package Manager: npm 6.14.15
 
 OS: win32 x64
 
+# Installation
+
+    Clone this repo
+    cd into the folder of the cloned repo
+    Install dependencies
+    Update the LastFM API Key
+
+        Go to api.service.ts and save your API keys into the file
+
+        export class LastfmService {
+
+            API_KEY_LASTFM = <your-lastFM-API-key-goes-here>
+            API_KEY_THEMOVIEDB = <your-TheMovieDB-API-key-goes-here>
+
+            constructor(private http: HttpClient) { }
+
+    Run ng serve, and navigate to http://localhost:4200/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
