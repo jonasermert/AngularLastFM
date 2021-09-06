@@ -2,6 +2,35 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
 
+
+# Coding Challenge
+Develop an Angular (Typescript) Single-Page WebApp for searching music artist information provided by the official LastFM-API. Additionally users of the App should be able to compare two of their favorite artists side by side.
+
+# Views
+The following describes the views expected to be present in the App.
+Navigation
+The Navigation is placed at the top of the page. It includes the title of your app a search field and a navigation to the side-by-side comparison feature described below.
+
+# Main-view
+This is the entry point of the application. It shows the 10 top artists of a certain country. A
+dropdown element is present at the top of the main content view containing three predefined countries and their respective country code. One element is selected by default and the respective data is fetched upon entering the application. The results are presented in a list view. Each list element provides the user with useful information about
+the artist as well as an image.
+
+# Detail-View
+This view contains a detailed portfolio of the selected artist (name, banner image, amount of listeners and plays). Furthermore two sections below the meta information present users of the app with the artists top 5 tracks and top 5 albums (Also presented in a list view with the artwork, title and play count).
+
+# Artist-search
+As already mentioned above, the search bar is present in the Navigation section. Once the user starts typing the search is performed and the results are presented to the user in a result list. A click or tap on one of the found artists opens the respective detail view.
+
+# (Bonus) Side-by-Side Comparison
+Upon entering this view, the screen will be split in 2 sides vertically. Each side contains a search field where users can enter the name of an artist. Once the user starts typing the search is performed and matching results are presented in a result list. If a found artist is clicked/tapped a detail view of the artist is presented below the search field. Using both sides the user is then able to compare both artists by their meta information.
+
+# General
+Use the latest version of the Angular framework. For simplicity you can use the Angular Material Library ( https://material.angular.io ) as a source for your UI components. If you feel like customizing the whole experience you may do so. Any API Communication is preferred in JSON format.
+In general the style of the application is entirely up to you. Animations are nice to have but not required. Responsive design for mobile as well as desktop devices is also not required but will be considered as a bonus.
+There is no need for completion, this is supposed to be a way for you to demonstrate how well you can work yourself into an API and work with the means that the Angular
+framework provides.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
