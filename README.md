@@ -45,6 +45,12 @@ SmartGit
 
 Mozilla Firefox
 
+# Versions
+Angular CLI: 12.2.4
+Node: 16.6.1 (Unsupported)
+Package Manager: npm 6.14.15
+OS: win32 x64
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
