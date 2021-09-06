@@ -66,7 +66,6 @@ OS: win32 x64
         export class LastfmService {
 
             API_KEY_LASTFM = <your-lastFM-API-key-goes-here>
-            API_KEY_THEMOVIEDB = <your-TheMovieDB-API-key-goes-here>
 
             constructor(private http: HttpClient) { }
 
