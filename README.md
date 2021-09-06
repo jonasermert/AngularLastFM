@@ -36,6 +36,11 @@ https://www.udemy.com/course/der-angular-2-kurs/
 
 https://stackoverflow.com/questions/40817280/how-to-change-angular-cli-favicon
 
+# Used Software
+Webstorm
+SmartGit
+Mozilla Firefox
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
