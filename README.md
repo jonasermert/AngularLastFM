@@ -33,6 +33,7 @@ framework provides.
 
 # Resources
 https://www.udemy.com/course/der-angular-2-kurs/
+
 https://stackoverflow.com/questions/40817280/how-to-change-angular-cli-favicon
 
 ## Development server
