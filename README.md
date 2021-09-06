@@ -31,7 +31,7 @@ In general the style of the application is entirely up to you. Animations are ni
 There is no need for completion, this is supposed to be a way for you to demonstrate how well you can work yourself into an API and work with the means that the Angular
 framework provides.
 
-# Resources
+# Used Resources
 https://www.udemy.com/course/der-angular-2-kurs/
 
 https://stackoverflow.com/questions/40817280/how-to-change-angular-cli-favicon
