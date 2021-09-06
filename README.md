@@ -38,7 +38,9 @@ https://stackoverflow.com/questions/40817280/how-to-change-angular-cli-favicon
 
 # Used Software
 Webstorm
+
 SmartGit
+
 Mozilla Firefox
 
 ## Development server
