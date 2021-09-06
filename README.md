@@ -31,6 +31,9 @@ In general the style of the application is entirely up to you. Animations are ni
 There is no need for completion, this is supposed to be a way for you to demonstrate how well you can work yourself into an API and work with the means that the Angular
 framework provides.
 
+# Resource
+I used the following Udemy course as a resource: https://www.udemy.com/course/der-angular-2-kurs/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
