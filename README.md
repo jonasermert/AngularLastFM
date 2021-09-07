@@ -43,9 +43,9 @@ https://www.typescriptlang.org/docs/handbook/
 # Used Software
 Webstorm 2021.2.2
 
-SmartGit
+SmartGit 21.1
 
-Mozilla Firefox
+Mozilla Firefox 92.0
 
 # Versions
 Angular CLI: 12.2.4
