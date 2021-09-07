@@ -41,7 +41,7 @@ https://www.last.fm/api
 https://www.typescriptlang.org/docs/handbook/
 
 # Used Software
-Webstorm
+Webstorm Ultimate 2021.2.2
 
 SmartGit
 
