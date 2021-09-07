@@ -40,7 +40,7 @@ https://stackoverflow.com/questions/30940824/get-search-results-from-last-fm-api
 https://www.typescriptlang.org/docs/handbook/
 
 # Used Software
-Webstorm 2021.2.2
+Webstorm 2021.2.1
 
 SmartGit 21.1
 
