@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './Core/components/home/home.component';
 import { MainViewComponent } from './Core/components/main-view/main-view.component';
 import { DetailViewComponent } from './Core/components/detail-view/detail-view.component';
+import {HeaderComponent} from "./header.component";
 
 @NgModule({
   declarations: [
