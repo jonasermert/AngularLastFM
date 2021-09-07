@@ -1,8 +1,5 @@
 # AngularLastFM
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
-
-
 # Coding Challenge
 Develop an Angular (Typescript) Single-Page WebApp for searching music artist information provided by the official LastFM-API. Additionally users of the App should be able to compare two of their favorite artists side by side.
 
