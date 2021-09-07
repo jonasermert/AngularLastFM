@@ -35,6 +35,8 @@ https://stackoverflow.com/questions/40817280/how-to-change-angular-cli-favicon
 
 https://www.last.fm/api
 
+https://stackoverflow.com/questions/30940824/get-search-results-from-last-fm-api-using-node-and-angular
+
 https://www.typescriptlang.org/docs/handbook/
 
 # Used Software
