@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Main</title>
-</head>
-<body>
-
-</body>
-</html>
+<div class="row">
+  <div class="col-md-5">
+    <app-main-view (ArtistSelected)="selectedArtist = $event"></app-main-view>
+  </div>
+  <div class="col-md-7">
+    <app-detail-view [selectedArtist]="selectedArtist"></app-detail-view>
+  </div>
+</div>
