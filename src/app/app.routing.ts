@@ -15,7 +15,6 @@ const ROUTES: Routes = [
   { path: '', component: MainViewComponent }  ,
   { path: 'mainview', loadChildren: './main-view/main-view.module#MainViewModule'},
 
-
 ];
 
 export const routing = RouterModule.forRoot(ROUTES);
