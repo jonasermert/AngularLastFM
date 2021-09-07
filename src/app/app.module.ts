@@ -11,6 +11,7 @@ import { DetailViewComponent } from './Core/components/detail-view/detail-view.c
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
     HomeComponent,
     MainViewComponent,
     DetailViewComponent

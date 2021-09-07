@@ -1,1 +1,32 @@
-<p>detail-view works!</p>
+<div class="row">
+  <div class="col-xs-12">
+    <img src="{{ selectedRecipe?.imagePath }}" alt="" class="img-responsive">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ selectedRecipe?.name }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success">Zur Einkaufsliste</button>
+    <button class="btn btn-primary">Bearbeiten</button>
+    <button class="btn btn-danger">Löschen</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <p>{{ selectedRecipe?.description }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let ingredient of selectedRecipe?.ingredients">{{ ingredient.name }} ({{ ingredient.amount }})</li>
+    </ul>
+  </div>
+</div>
