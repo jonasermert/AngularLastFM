@@ -38,6 +38,8 @@ https://stackoverflow.com/questions/40817280/how-to-change-angular-cli-favicon
 
 https://www.last.fm/api
 
+https://www.typescriptlang.org/docs/handbook/
+
 # Used Software
 Webstorm
 
