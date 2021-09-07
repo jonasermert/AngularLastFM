@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { Artist } from "Shared/models/Artist.model";
+import {Artist} from "../../../Shared/models/Artist";
 
 @Component({
   selector: 'app-detail-view',
@@ -8,7 +8,7 @@ import { Artist } from "Shared/models/Artist.model";
 })
 export class DetailViewComponent implements OnInit {
 
-  @Input() selectedArtist: Artist;
+  @Input() selectedArtist: Artist | undefined;
 
   constructor() { }
 

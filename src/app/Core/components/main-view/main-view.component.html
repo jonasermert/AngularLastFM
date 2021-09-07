@@ -1,1 +1,8 @@
-<p>main-view works!</p>
+<div class="row">
+  <div class="col-md-5">
+    <app-main-view (ArtistSelected)="selectedRecipe = $event"></app-main-view>
+  </div>
+  <div class="col-md-7">
+    <app-detail-view [selectedArtist]="selectedRecipe"></app-detail-view>
+  </div>
+</div>
