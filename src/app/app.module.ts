@@ -15,7 +15,8 @@ import {HeaderComponent} from "./header.component";
     HeaderComponent,
     HomeComponent,
     MainViewComponent,
-    DetailViewComponent
+    DetailViewComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
