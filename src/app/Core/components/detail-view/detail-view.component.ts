@@ -8,7 +8,7 @@ import {Artist} from "../../../Shared/models/Artist";
 })
 export class DetailViewComponent implements OnInit {
 
-  @Input() selectedArtist: Artist;
+  @Input() selectedArtist: Artist | undefined;
 
   constructor() { }
 
