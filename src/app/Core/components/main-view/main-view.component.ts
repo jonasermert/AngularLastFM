@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import {Artist} from "../../../Shared/models/Artist";
 
 @Component({
   selector: 'app-main-view',
   templateUrl: './main-view.component.html',
-  styleUrls: ['./main-view.component.css']
+  styles: []
 })
-export class MainViewComponent implements OnInit {
+export class ArtistListComponent implements OnInit {
+  @Output() artistSelected = new EventEmitter<Artist>();
+
+
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+  }
+
+  onSelected(artist: Artist) {
+    this.artistSelected.emit(artist);
   }
 
 }
+
