@@ -9,7 +9,7 @@ import {ArtistListComponent, MainViewComponent} from './Core/components/main-vie
 import { DetailViewComponent } from './Core/components/detail-view/detail-view.component';
 import {HeaderComponent} from "./Shared/components/header/header.component";
 import {FooterComponent} from "./Shared/components/footer/footer.component";
-import {SearchComponent} from "./Shared/components/search/ search.component";
+import {SearchComponent} from "./Shared/components/search/search.component";
 import {SharedModule} from "./Shared/shared.modules";
 
 @NgModule({
