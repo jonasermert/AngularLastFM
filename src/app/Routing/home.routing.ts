@@ -5,7 +5,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "Core/components/home/home.component";
 
 const HOME_ROUTES: Routes = [
-  { path: '', component: HomeComponent}
+  { path: 'home', component: HomeComponent}
 ];
 
 export const homeRouting = RouterModule.forChild(HOME_ROUTES);

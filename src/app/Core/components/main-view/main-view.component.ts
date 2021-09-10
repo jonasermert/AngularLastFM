@@ -22,3 +22,5 @@ export class ArtistListComponent implements OnInit {
 
 }
 
+export class MainViewComponent {
+}

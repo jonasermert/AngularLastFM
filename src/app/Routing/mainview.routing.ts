@@ -1,9 +1,11 @@
 import { Routes, RouterModule } from "@angular/router";
 
-import { MainViewComponent } from "Core/components/main-view/main-view.component";
+
+// @ts-ignore
+import { MainViewComponent } from "Core/components/main-view/mainview.component";
 
 const MAINVIEW_ROUTES: Routes = [
-  { path: '', component: MainViewComponent}
+  { path: 'main-view', component: MainViewComponent}
 ];
 
 export const homeRouting = RouterModule.forChild(MAINVIEW_ROUTES);
