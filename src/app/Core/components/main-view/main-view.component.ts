@@ -6,10 +6,8 @@ import {Artist} from "../../../Shared/models/Artist";
   templateUrl: './main-view.component.html',
   styles: []
 })
-export class ArtistListComponent implements OnInit {
+export class MainViewComponent implements OnInit {
   @Output() artistSelected = new EventEmitter<Artist>();
-
-
 
   constructor() { }
 
@@ -20,7 +18,4 @@ export class ArtistListComponent implements OnInit {
     this.artistSelected.emit(artist);
   }
 
-}
-
-export class MainViewComponent {
 }
