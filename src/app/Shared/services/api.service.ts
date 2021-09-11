@@ -12,7 +12,7 @@ function constructor(private: any) {
 @Injectable()
 export class ApiService {
 
-   API_KEY_LASTFM = <your-lastFM-API-key-goes-here>
+   API_KEY_LASTFM = <APIKEY einfuegene>
 
      constructor(private http: HttpClient) { }
 
