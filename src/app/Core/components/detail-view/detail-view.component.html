@@ -1,29 +1,49 @@
-<div class="row">
-  <div class="col-xs-12">
-    <img src="{{ selectedArtist?.image }}" alt="" class="img">
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-    <h1>{{ selectedArtist?.name }}</h1>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-  </div>
-</div>
-<hr>
-<div class="row">
-  <div class="col-xs-12">
-    <p>{{ selectedArtist?.listeners }}</p>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-    <p>{{ selectedArtist?.playcount }}</p>
-  </div>
-<div class="row">
-  <div class="col-xs-12">
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Artist Detail</h4>
+        <button mat-button mat-dialog-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div mat-dialog-content>
+        <div class="modal-body">
+          <mat-card class="example-card">
+            <mat-card-title-group>
+              <mat-card-title>{{artistDetail.artist && artistDetail.artist.name}}</mat-card-title>
+              <mat-card-subtitle>Amount of listeners:<b>{{artistDetail.artist&& artistDetail.artist.stats && artistDetail.artist.stats.listeners}}</b></mat-card-subtitle>
+              <mat-card-subtitle>Plays:<b>{{artistDetail.artist && artistDetail.artist.stats && artistDetail.artist.stats.playcount}}</b></mat-card-subtitle>
+              <img mat-card-sm-image src="https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png" >
+            </mat-card-title-group>
+            <mat-card-content>
+              {{artistDetail.artist && artistDetail.artist.bio && artistDetail.artist.bio.summary}}
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class=row>
+          <div class="col-lg-6">
+            <mat-list>
+              <h1>Top 5 Albums</h1>
+              <mat-list-item *ngFor="let topAlbum of artistAlbum.topalbums.album">
+                <div mat-line>{{topAlbum.name}}</div>
+                <div mat-line>plays:{{topAlbum.playcount}}</div>
+              </mat-list-item>
+            </mat-list>
+          </div>
+          <div class="col-lg-6">
+            <mat-list>
+              <h1>Top 5 Tracks</h1>
+              <mat-list-item *ngFor="let topTrack of artistTracks.toptracks.track">
+                <div mat-line>{{topTrack.name}}</div>
+                <div mat-line>plays:{{topTrack.playcount}}</div>
+                <div mat-line>listeners:{{topTrack.listeners}}</div>
+              </mat-list-item>
+            </mat-list>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

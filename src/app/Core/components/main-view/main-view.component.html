@@ -1,8 +1,55 @@
-<div class="row">
-  <div class="col-md-5">
-    <app-main-view (ArtistSelected)="selectedArtist = $event"></app-main-view>
+<div class="container-fluid">
+  <div class="row">
+    <div class="content" role="main">
+      <div class="card highlight-card card-small">
+        <p>
+          Top 10 Artists
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="col-md-7">
-    <app-detail-view [selectedArtist]="selectedArtist"></app-detail-view>
+  <div class="row">
+    <div class="col-lg-6">
+      <label><b>Search Artist by Country:</b></label>
+      <select #mySelect class="dropdown" (change)="getByCountry(mySelect.value)">
+        <option *ngFor="let con of countries" [value]="con.id">
+          {{ con.name }}
+        </option>
+      </select>
+    </div>
+  </div>
+  <br>
+  <div style="width:20px; margin:0 auto;" [hidden]="topArtists">
+    <mat-spinner></mat-spinner>
+  </div>
+  <div class="row">
+
+    <div class="col-lg-3 col-md-3 col-sm-3" *ngFor="let item of topArtists.artists.artist">
+      <mat-chip-list class="mat-chip-list-stacked" aria-label="Color selection">
+        <mat-chip color="primary" selected>{{item.name}}</mat-chip>
+      </mat-chip-list>
+      <br>
+    </div>
+  </div>
+  <div class="row">
+    <div style="width:20px; margin:0 auto;" [hidden]="artistByCountry">
+      <mat-spinner></mat-spinner>
+    </div>
+    <div class="col-lg-6">
+      <mat-list>
+        <mat-list-item *ngFor="let artist of artistByCountry.topartists.artist">
+          <div mat-line><b>{{artist.name}}</b></div>
+          <div mat-line>
+            <a href="{{artist.url}}" target="_blank"><button mat-raised-button color="primary">{{artist.url}}</button></a>
+          </div>
+          <div >
+            <button mat-raised-button color="accent" (click)="artistModal(artist.name)" >View Detail</button>
+          </div>
+        </mat-list-item>
+      </mat-list>
+    </div>
+    <div class="col-lg-6">
+      <img id="bannerImg" src="../../assets/img/banner.jpg">
+    </div>
   </div>
 </div>
